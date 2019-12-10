@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<title>Meu projeto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/grao_cafe.jpg");
+  min-height: 75%;
+}
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">INÍCIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">SOBRE O CAFÉ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">TIPOS DE CAFÉ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">PREPARO</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">:)</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">CAFÉ</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">BALNEÁRIO CAMBORIÚ-SC</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE O CAFÉ</span></h5>
+    <p>O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro. É servido tradicionalmente quente, mas também pode ser consumido gelado. O café é um estimulante, por possuir cafeína.</p>
+    <p>A história do café começou no século IX. O café é originário das terras altas da Etiópia (possivelmente com culturas no Sudão e Quênia) e difundiu-se para o mundo através do Egito e da Europa. Mas, ao contrário do que se acredita, a palavra "café" não é originária de Kaffa — local de origem da planta —, e sim da palavra árabe qahwa, que significa "vinho" (قهوة), devido à importância que a planta passou a ter para o mundo árabe.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Amo pessoas que me fazem rir, me fazem pensar e me fazem café. Não necessariamente nessa ordem."</i></p>
+      <p>Autor desconhecido</p>
+    </div>
+    <img src="C:\Users\7377800\Downloads\Projeto\cafee.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TIPOS DE CAFÉ</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">2</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Cappuccino</h5>
+      <p class="w3-text-grey">é uma bebida italiana preparada com café expresso e leite. Um cappuccino clássico, muito famoso no Brasil e consiste em um terço de café expresso, um terço de leite vaporizado e um terço de espuma de leite vaporizado.</p><br>
+    
+      <h5>Mocha</h5>
+      <p class="w3-text-grey">Mocha é o nome dado a um tipo de grão de café com um sabor achocolatado, menor e mais redondo que a maioria dos outros tipos de grãos da espécie.</p><br>
+    
+      <h5>Latte</h5>
+      <p class="w3-text-grey">Latte é uma bebida de café expresso com uma quantidade generosa de espuma de leite no topo.</p><br>
+    
+      <h5>Café cortado</h5>
+      <p class="w3-text-grey">É um café com um pouco leite.</p><br>
+    
+      <h5>Café italiano</h5>
+      <p class="w3-text-grey">Existem vários tipos, mas o expresso é o mais conhecido, ele é bem forte e vem numa xícara pequena de café.</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Macchiato</h5>
+      <p class="w3-text-grey">também conhecido como espresso macchiato, é um café com leite típico italiano, consistindo num café expresso misturado com um pouco de leite quente com espuma.</p><br>
+    
+      <h5>Pingado</h5>
+      <p class="w3-text-grey">consiste em priorizar o sabor do leite, com apenas um toque de café, tendo como coloração um tom caramelo.</p><br>
+    
+      <h5>Média</h5>
+      <p class="w3-text-grey"> é conhecida como o casamento perfeito entre as duas. Utiliza-se a mesma medida de café expresso e de leite vaporizado, e, para finalizar, uma fina camada de espuma é adicionada, o que a torna um pouco mais cremosa que o pingado.</p><br>
+    
+      <h5>Breve</h5>
+      <p class="w3-text-grey">É um café com leite e espuma na mesma quantidade.</p><br>
+    
+      <h5>Café com chantilly</h5>
+      <p class="w3-text-grey">café expresso com cobertura de creme chantilly.</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PREPARO</span></h5>
+      <p>O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro. É servido tradicionalmente quente, mas também pode ser consumido gelado. O café é um estimulante, por possuir cafeína.</p>
+      <p>A história do café começou no século IX. O café é originário das terras altas da Etiópia (possivelmente com culturas no Sudão e Quênia) e difundiu-se para o mundo através do Egito e da Europa. Mas, ao contrário do que se acredita, a palavra "café" não é originária de Kaffa — local de origem da planta —, e sim da palavra árabe qahwa, que significa "vinho" (قهوة), devido à importância que a planta passou a ter para o mundo árabe.</p>
+      <div class="w3-panel w3-leftbar w3-light-grey">
+        <p><i>"Amo pessoas que me fazem rir, me fazem pensar e me fazem café. Não necessariamente nessa ordem."</i></p>
+        <p>Autor desconhecido</p>
+      </div>
+      <img src="C:\Users\7377800\Downloads\Projeto\cafee.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
